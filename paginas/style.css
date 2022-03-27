@@ -1,0 +1,33 @@
+body{
+  font-family: "Century Gothic";
+}
+
+input[type=checkbox]{
+  display: none; /*solo se esconde para tener un campo personalisado*/
+}
+
+input[type=checkbox] + label{
+  cursor:pointer;
+}/*esta linea significa esto + el siguiente elemento*/
+
+.ceckk:before{
+  content:'';
+  background:transparent;
+  border: 3px solid #88c64b;
+  border-radius: 25px;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+  text-align:center;
+  text-shadow:4px -2px 3px gray;
+  vertical-align:middle;
+  width;95px;
+}
+
+input[type=checkbox]:checked + label:before{
+  content: '✔';
+  font-size: 30px;
+  font-family:'Times New Roman';
+  color:#88c64b;
+}
